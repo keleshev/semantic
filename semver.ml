@@ -1,5 +1,4 @@
 open Shim
-module Parsing = Parser
 
 module Version = struct
   type t = {

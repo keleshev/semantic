@@ -1,7 +1,6 @@
 let (=>) left right = print_string (if left = right then "." else "F")
 
-module Parsing = Parser
-module Source = Parser.Source
+module Source = Parsing.Source
 let source = Source.of_string
 
 module TestSource = struct
