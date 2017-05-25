@@ -1,0 +1,10 @@
+opam-version: "0.1.0-alpha"
+version: "0.1.0-alpha"
+maintainer: "vladimir@keleshev.com"
+authors: ["Vladimir Keleshev"]
+homepage: "https://github.com/keleshev/semantic"
+bug-reports: "https://github.com/keleshev/semantic/issues"
+dev-repo: "https://github.com/keleshev/semantic.git"
+build: [
+  ["jbuilder" "build" "--only" "semantic" "--root" "." "-j" jobs "@install"]
+]

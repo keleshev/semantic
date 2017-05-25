@@ -1,7 +1,8 @@
+let () = print_endline __FILE__
 let (=>) left right = print_string (if left = right then "." else "F")
 
-let version = Semver.Version.create
-let parse = Semver.Version.parse
+let version = Semantic.Version.create
+let parse = Semantic.Version.parse
 
 let () = ()
   ; parse "0.0.0" => Some (version 0 0 0)

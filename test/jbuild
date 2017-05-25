@@ -1,0 +1,10 @@
+(jbuild_version 1)
+
+(executables
+ ((names (test_version test_parsing))
+  (libraries (semantic))))
+
+(alias
+ ((name    runtest)
+  (deps    (test_version.exe test_parsing.exe))
+  (action  (run ${<}))))

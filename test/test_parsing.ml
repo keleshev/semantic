@@ -1,13 +1,14 @@
+let () = print_endline __FILE__
 let (=>) left right = print_string (if left = right then "." else "F")
 
-module Source = Parsing.Source
+module Source = Semantic.Parsing.Source
 let source = Source.of_string
 
 module TestSource = struct
   Source.to_string (Source.of_string "hai") => "hai"
 end
 
-open Parsing
+open Semantic.Parsing
 
 let () = ()
   ; parse any (source "x") => Some 'x'
