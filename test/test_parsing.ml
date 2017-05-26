@@ -1,4 +1,4 @@
-let () = print_endline __FILE__
+let () = print_endline __FILE__; at_exit print_newline
 let (=>) left right = print_string (if left = right then "." else "F")
 
 module Source = Semantic.Parsing.Source
